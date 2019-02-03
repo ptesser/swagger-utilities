@@ -11,7 +11,7 @@ To generate Swagger Client we set some custom scripts as below.
 
 This **example** is valid for Typescript Angular generator of Swagger version 2 inside an Angular progect.
 
-I'm assuming that Swagger tools are under `doc/api/` folder and that there is another folder on the same repository that manage the front-end (`front-end/`).
+I'm assuming that Swagger tools are under `doc/api/` folder and that there is another folder on the same repository that manages the front-end (`front-end/`).
 
 Structure:
 
@@ -42,7 +42,7 @@ Structure:
 }
 ```
 
-Templates that you can find in this repository for **Typescript Angular** try to follow these rules:
+Templates, that you can find in this repository are for **Typescript Angular**, try to follow these rules:
 
 - https://gist.github.com/ptesser/d1c7aad4be339dd3a6fb7ee5471b7819
 - https://gist.github.com/ptesser/ef8c891dfc3a87d4d5136d9ad722eb7a
