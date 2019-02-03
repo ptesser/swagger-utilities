@@ -1,0 +1,18 @@
+{{#hasEnums}}
+
+// tslint:disable-next-line:no-namespace
+export namespace {{classname}} {
+{{#vars}}
+  {{#isEnum}}
+  // tslint:disable-next-line:max-line-length
+  export type {{enumName}} = {{#allowableValues}}{{#enumVars}}{{{value}}}{{^-last}} | {{/-last}}{{/enumVars}}{{/allowableValues}};
+  export const {{enumName}} = {
+  {{#allowableValues}}
+  {{#enumVars}}
+    {{name}}: {{{value}}} as {{enumName}},
+  {{/enumVars}}
+  {{/allowableValues}}
+  };
+  {{/isEnum}}
+{{/vars}}
+}{{/hasEnums}}
